@@ -1,0 +1,17 @@
+Para responder a essa pergunta, precisamos determinar em que ponto da estrada os dois veículos se cruzarão. Podemos fazer isso usando a fórmula de distância, velocidade e tempo:
+
+distância = velocidade x tempo
+
+ "x" a distância percorrida pelo carro desde Ribeirão Preto até o ponto de cruzamento, em quilômetros. A distância percorrida pelo caminhão será então de 100 km - x (pois eles se encontram no meio do caminho).
+
+Para calcular o tempo que cada um levará para chegar ao ponto de cruzamento, precisamos levar em conta o fato de que o caminhão leva 5 minutos a mais em cada pedágio do que o carro. Vamos supor que os pedágios estejam localizados a 30 km e 70 km de Ribeirão Preto (ou seja, a 70 km e 30 km de Franca, respectivamente). O carro levará 30/110 horas para chegar ao primeiro pedágio, e mais 40/110 horas para chegar ao segundo pedágio (totalizando 70/110 horas até o ponto de cruzamento). Já o caminhão levará 35/80 horas para chegar ao primeiro pedágio, mais 40/80 horas para chegar ao segundo pedágio, e mais 35/80 horas para chegar ao ponto de cruzamento (totalizando 110/80 horas até o ponto de cruzamento).
+
+Agora podemos igualar as distâncias percorridas pelos dois veículos (pois eles se encontram no meio do caminho) e resolver para x:
+
+110/70 x = 100 - x - 35/80 x - 70/80 x
+110/70 x + 35/80 x + 70/80 x = 100
+1,5714 x + 0,4375 x + 0,875 x = 100
+2,8849 x = 100
+x = 34,684 km
+
+Portanto, o carro estará mais próximo de Ribeirão Preto quando os veículos se cruzarem, já que ele percorreu apenas 34,684 km desde a cidade de Ribeirão Preto, enquanto o caminhão já percorreu 65,316 km desde Franca.
