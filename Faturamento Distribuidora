@@ -1,0 +1,40 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        // Define o faturamento mensal de cada estado
+        double faturamentoSP = 67836.43;
+        double faturamentoRJ = 36678.66;
+        double faturamentoMG = 29229.88;
+        double faturamentoES = 27165.48;
+        double faturamentoOutros = 19849.53;
+
+        // Calcula o faturamento total mensal da distribuidora
+        double faturamentoTotal = faturamentoSP + faturamentoRJ + faturamentoMG + faturamentoES + faturamentoOutros;
+
+        // Calcula o percentual de representação de cada estado no faturamento total mensal da distribuidora
+        double percentualSP = (faturamentoSP / faturamentoTotal) * 100;
+        double percentualRJ = (faturamentoRJ / faturamentoTotal) * 100;
+        double percentualMG = (faturamentoMG / faturamentoTotal) * 100;
+        double percentualES = (faturamentoES / faturamentoTotal) * 100;
+        double percentualOutros = (faturamentoOutros / faturamentoTotal) * 100;
+
+        // Exibe os resultados
+        Console.WriteLine("Percentual de representação de cada estado no faturamento total mensal da distribuidora:");
+        Console.WriteLine($"- SP: {percentualSP:F2}%");
+        Console.WriteLine($"- RJ: {percentualRJ:F2}%");
+        Console.WriteLine($"- MG: {percentualMG:F2}%");
+        Console.WriteLine($"- ES: {percentualES:F2}%");
+        Console.WriteLine($"- Outros: {percentualOutros:F2}%");
+    }
+}
+
+OUTPUT: 
+Percentual de representação de cada estado no faturamento total mensal da distribuidora:
+- SP: 41,86%
+- RJ: 22,68%
+- MG: 18,06%
+- ES: 16,79%
+- Outros: 12,31%
